@@ -4,10 +4,16 @@ class VoterEligibilitySurvey extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      race: "",
+      gender: "",
       age: "",
-      citizenship: "",
-      convictedOfFelony: "",
-      eligibleToVote: false,
+      citizen: "",
+      property: "",
+      taxes: "",
+      language: "",
+      felony: "",
+      residency: "",
+      // eligibleToVote: false,
     };
   }
 
@@ -15,19 +21,51 @@ class VoterEligibilitySurvey extends React.Component {
     this.setState({
       [event.target.name]: event.target.value,
     });
+    const {
+      race,
+      gender,
+      age,
+      citizen,
+      property,
+      taxes,
+      language,
+      felony,
+      residency,
+    } = this.state;
+
+    // validate the answers given
+    // if (race === "No") {
+    //   alert("You are not eligible to vote.");
+    // }
+    if (race === "No") {
+      console.log("Race is No");
+      alert("You are not eligible to vote.");
+    }
+
+    // if (event.target.value === "No") {
+    //   alert("You are not eligible to vote.");
+    // }
   };
 
   handleSubmit = (event) => {
-    event.preventDefault();
-    const { age, citizenship, convictedOfFelony } = this.state;
-    if (age === "Yes" && citizenship === "Yes" && convictedOfFelony === "No") {
-      this.setState({ eligibleToVote: true });
-    } else {
-      this.setState({ eligibleToVote: false });
+    if (this.event.target.value === "No") {
+      alert("You are not eligible to vote.");
     }
-    console.log(age, citizenship, convictedOfFelony);
-    console.log(this.state.eligibleToVote);
+    event.preventDefault();
+    console.log(this.state);
   };
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const { age, citizenship, convictedOfFelony } = this.state;
+  //   if (age === "Yes" && citizenship === "Yes" && convictedOfFelony === "No") {
+  //     this.setState({ eligibleToVote: true });
+  //   } else {
+  //     this.setState({ eligibleToVote: false });
+  //   }
+  //   console.log(age, citizenship, convictedOfFelony);
+  //   console.log(this.state.eligibleToVote);
+  // };
 
   render() {
     const { eligibleToVote } = this.state;
@@ -36,7 +74,7 @@ class VoterEligibilitySurvey extends React.Component {
         <table>
           <thead>
             <tr>
-              <th>1765 Connecticut Voting Qualifications</th>
+              <th id="title">1765 Connecticut Voting Qualifications</th>
               <th>Yes</th>
               <th>No</th>
             </tr>
@@ -216,12 +254,12 @@ class VoterEligibilitySurvey extends React.Component {
           </tbody>
         </table>
         <br />
-        <input type="submit" value="Submit" />
+        {/* <input type="submit" value="Submit" />
         {eligibleToVote ? (
           <p>You are eligible to vote!</p>
         ) : (
           <p>You are not eligible to vote.</p>
-        )}
+        )} */}
       </form>
     );
   }

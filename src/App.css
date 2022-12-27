@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,11 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+#title {
+  color: blue;
 }
 
 table {
   border: 2px solid black;
+  margin: auto;
+  margin-top: 20px;
 }
 td {
   border: 1px solid black;
+  padding: 5px 20px;
+}
+
+td:nth-child(1) {
+  padding: 10px 200px;
 }
