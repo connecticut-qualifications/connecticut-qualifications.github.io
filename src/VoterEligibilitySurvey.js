@@ -1,86 +1,12 @@
-// import React from 'react';
-
-// class VoterEligibilitySurvey extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       age: '',
-//       citizenship: '',
-//       convictedOfFelony: '',
-//       eligibleToVote: false,
-//     };
-//   }
-
-//   handleChange = (event) => {
-//     this.setState({
-//       [event.target.name]: event.target.value,
-//     });
-//   }
-
-//   handleSubmit = (event) => {
-//     event.preventDefault();
-//     const { age, citizenship, convictedOfFelony } = this.state;
-//     if (age >= 18 && citizenship === 'Yes' && convictedOfFelony === 'No') {
-//       this.setState({ eligibleToVote: true });
-//     } else {
-//       this.setState({ eligibleToVote: false });
-//     }
-//   }
-
-//   render() {
-//     const { eligibleToVote } = this.state;
-//     return (
-//       <form onSubmit={this.handleSubmit}>
-//         <label>
-//           Are you at least 18 years old?
-//           <input
-//             type="text"
-//             name="age"
-//             onChange={this.handleChange}
-//           />
-//         </label>
-//         <br />
-//         <label>
-//           Are you a citizen of the United States?
-//           <input
-//             type="text"
-//             name="citizenship"
-//             onChange={this.handleChange}
-//           />
-//         </label>
-//         <br />
-//         <label>
-//           Have you ever been convicted of a felony?
-//           <input
-//             type="text"
-//             name="convictedOfFelony"
-//             onChange={this.handleChange}
-//           />
-//         </label>
-//         <br />
-//         <input type="submit" value="Submit" />
-//         {eligibleToVote ? (
-//           <p>You are eligible to vote!</p>
-//         ) : (
-//           <p>You are not eligible to vote.</p>
-//         )}
-//       </form>
-//     );
-//   }
-// }
-
-// export default VoterEligibilitySurvey;
-
-
-import React from 'react';
+import React from "react";
 
 class VoterEligibilitySurvey extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      age: '',
-      citizenship: '',
-      convictedOfFelony: '',
+      age: "",
+      citizenship: "",
+      convictedOfFelony: "",
       eligibleToVote: false,
     };
   }
@@ -89,84 +15,206 @@ class VoterEligibilitySurvey extends React.Component {
     this.setState({
       [event.target.name]: event.target.value,
     });
-  }
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
     const { age, citizenship, convictedOfFelony } = this.state;
-    if (age === 'Yes' && citizenship === 'Yes' && convictedOfFelony === 'No') {
+    if (age === "Yes" && citizenship === "Yes" && convictedOfFelony === "No") {
       this.setState({ eligibleToVote: true });
     } else {
       this.setState({ eligibleToVote: false });
     }
-    console.log(age, citizenship, convictedOfFelony)
-    console.log(this.state.eligibleToVote)
-
-  }
+    console.log(age, citizenship, convictedOfFelony);
+    console.log(this.state.eligibleToVote);
+  };
 
   render() {
     const { eligibleToVote } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Are you at least 18 years old?
-          <br />
-          <input
-            type="radio"
-            name="age"
-            value="Yes"
-            onChange={this.handleChange}
-          />
-          Yes
-          <br />
-          <input
-            type="radio"
-            name="age"
-            value="No"
-            onChange={this.handleChange}
-          />
-          No
-        </label>
-        <br />
-        <label>
-          Are you a citizen of the United States?
-          <br />
-          <input
-            type="radio"
-            name="citizenship"
-            value="Yes"
-            onChange={this.handleChange}
-          />
-          Yes
-          <br />
-          <input
-            type="radio"
-            name="citizenship"
-            value="No"
-            onChange={this.handleChange}
-          />
-          No
-        </label>
-        <br />
-        <label>
-          Have you ever been convicted of a felony?
-          <br />
-          <input
-            type="radio"
-            name="convictedOfFelony"
-            value="Yes"
-            onChange={this.handleChange}
-          />
-          Yes
-          <br />
-          <input
-            type="radio"
-            name="convictedOfFelony"
-            value="No"
-            onChange={this.handleChange}
-          />
-          No
-        </label>
+        <table>
+          <thead>
+            <tr>
+              <th>1765 Connecticut Voting Qualifications</th>
+              <th>Yes</th>
+              <th>No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Are you white?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="race"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="race"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Are you a man?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Are you over 21 years of age?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="age"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="age"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Are you a Citizen?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="citizen"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="citizen"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Do you own property in this state?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="property"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="property"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Are your taxes paid?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="taxes"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="taxes"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Can you read and write English?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="language"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="language"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Have you been convicted of a crime?</td>
+              <td>
+                <input
+                  type="radio"
+                  name="felony"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="felony"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Have you lived in this state for 1 year</td>
+              <td>
+                <input
+                  type="radio"
+                  name="residency"
+                  value="Yes"
+                  onChange={this.handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="residency"
+                  value="No"
+                  onChange={this.handleChange}
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <br />
         <input type="submit" value="Submit" />
         {eligibleToVote ? (
