@@ -2,8 +2,9 @@
 
 Inspired by several tiktok posts:
 
-[https://www.tiktok.com/@sparkyissus/video/7177770533516234027](https://www.tiktok.com/@sparkyissus/video/7177770533516234027)
-[https://www.tiktok.com/@yaoet/video/7167461367841180970](https://www.tiktok.com/@yaoet/video/7167461367841180970)
+https://www.tiktok.com/@sparkyissus/video/7177770533516234027
+
+https://www.tiktok.com/@yaoet/video/7167461367841180970
 
 It seems like there's a kiosk in a museum that shows whether you'll be able to vote or not based on what you select.
 Election laws have evolved throughout time and they've significantly differed state-to-state (or colonies before revolutionary war) and the years.
