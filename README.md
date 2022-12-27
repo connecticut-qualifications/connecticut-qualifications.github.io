@@ -1,4 +1,4 @@
-# connecticut-qualifications
+# connecticut-voting-qualifications
 
 Inspired by a tiktok post:
 tiktok.com/t/ZTRqWG41L
