@@ -1,6 +1,7 @@
 # usvotingevolution
 
-Inspired by tiktok posts:
+Inspired by several tiktok posts:
+
 https://www.tiktok.com/@sparkyissus/video/7177770533516234027
 https://www.tiktok.com/@yaoet/video/7167461367841180970
 
