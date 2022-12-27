@@ -12,8 +12,7 @@ Election laws have evolved throughout time and they've significantly differed st
 Found the post pretty interesting but I couldn't find a web version for it so trying to recreate it here.
 Planning to deploy this on github pages so that's easily viewable by everyone: https://usvotingevolution.github.io/
 
-
-# Answers to questions (from what I've gathered so far)
+# Info of what I've gathered so far
 ## Connecticut (1765)
 Are you white?
     No -> Continue
