@@ -7,7 +7,8 @@ https://www.tiktok.com/@sparkyissus/video/7177770533516234027
 https://www.tiktok.com/@yaoet/video/7167461367841180970
 
 It seems like there's a kiosk in a museum that shows whether you'll be able to vote or not based on what you select.
-Election laws have evolved throughout time and they've significantly differed state-to-state (or colonies before revolutionary war) and the years.
+
+Supposed to show how election laws have evolved throughout time and they've significantly differed state-to-state (or colonies before revolutionary war) and the years.
 
 Found the concept pretty interesting but I couldn't find a web version for it so I'm trying to recreate it here.
 Planning to deploy this on github pages so that's easily viewable by everyone: https://usvotingevolution.github.io/
