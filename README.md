@@ -35,7 +35,9 @@ https://research.colonialwilliamsburg.org/Foundation/journal/Spring07/elections.
 
 ## Pennsylvania (1870)
 * Are you white?
+    - No -> Continue
 * Are you a man?
+    - No -> Denied
 * Are you over 21 years of age?
 * Are you a Citizen?
 * Do you own property in this state?
