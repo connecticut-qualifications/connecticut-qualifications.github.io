@@ -13,6 +13,13 @@ Supposed to show how election laws have evolved throughout time and they've sign
 Found the concept pretty interesting but I couldn't find a web version for it so I'm trying to recreate it here.
 Planning to deploy this on github pages so that's easily viewable by everyone: https://usvotingevolution.github.io/
 
+# Flow
+1) Upon opening, a map is shown in which a user can select different states (some states are not shown because they didn't exist then depending on the year that's selected). A default year will need to be selected. 
+2) In the museum, there were probably multiple kiosks depending on the year. To replicate this, we need to add an option to select a year directly on this map screen. 
+3) Upon choosing a year and then a state, it should load the questions and correct logic to get the proper voting qualifications. 
+
+Year -> State -> Questions 
+
 # Info of what I've gathered so far
 ## Connecticut (1765)
 * Are you white?
