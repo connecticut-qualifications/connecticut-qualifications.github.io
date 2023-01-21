@@ -13,7 +13,7 @@ class VoterEligibilitySurvey extends React.Component {
       language: "",
       felony: "",
       residency: "",
-      // eligibleToVote: false,
+      eligibleToVote: false,
     };
   }
 
