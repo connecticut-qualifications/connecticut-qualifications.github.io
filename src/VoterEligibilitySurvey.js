@@ -41,10 +41,6 @@ class VoterEligibilitySurvey extends React.Component {
       console.log("Race is No");
       alert("You are not eligible to vote.");
     }
-
-    // if (event.target.value === "No") {
-    //   alert("You are not eligible to vote.");
-    // }
   };
 
   handleSubmit = (event) => {
